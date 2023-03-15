@@ -65,8 +65,9 @@ body
             button
             {
                 border-radius: 10px;
-                width: 30%;
-                margin-top: 10px;
+                width: 25%;
+                height: 50px;
+                margin-top: 5px;
                 cursor: pointer;
                 background-color: rgb(39, 37, 37);
                 color: rgb(230, 133, 43);
