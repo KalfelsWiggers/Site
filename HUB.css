@@ -62,18 +62,18 @@ body
             align-content: center;
         }
     
-        button
-        {
-            border-radius: 10px;
-            width: 30%;
-            margin-top: 10px;
-            cursor: pointer;
-            background-color: rgb(39, 37, 37);
-            color: rgb(230, 133, 43);
-        }
+            button
+            {
+                border-radius: 10px;
+                width: 30%;
+                margin-top: 10px;
+                cursor: pointer;
+                background-color: rgb(39, 37, 37);
+                color: rgb(230, 133, 43);
+            }
 
-        button:hover
-        {
-            background-color: rgb(230, 133, 43);
-            color: rgb(39, 37, 37);
-        }
+            button:hover
+            {
+                background-color: rgb(230, 133, 43);
+                color: rgb(39, 37, 37);
+            }
