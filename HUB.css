@@ -8,7 +8,7 @@ body
 .Abasuperior
 {
     width: 100%;
-    height: 15vh;
+    height: 13vh;
     background-color: rgb(39, 34, 34);
     display: flex;
     flex-direction: row;
@@ -18,20 +18,50 @@ body
 
     .Logo
     {
-        background-color: yellow;
-        
+        width: 30%;
+        height: 13vh;
+        background-color: rgb(39, 34, 34);
+        margin-left: 15vh;
     }
+
+        .Nome
+        {
+            width: 50%;
+            margin-top: -8vh;
+        }
 
     .Botoes
     {
-        width: 50vh;
-        background-color: pink;
+        width: 40%;
+        height: 10vh;
+        background-color: rgb(39, 34, 34);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3vh;
+        
     }
+
+        button
+        {
+            width: 20vh;
+            background-color: rgb(39, 34, 34);
+            color: #E6852B;
+            border-radius: 2vh;
+        }
+        button:hover
+        {
+            cursor: pointer;
+            background-color: #E6852B;
+            color: black;
+        }
+
     
     .Perfil
-    {
-        width: 10vh;
-        background-color: red;
+    {      
+        height: 10vh;
+        background-color: rgb(39, 34, 34);
+        margin-right: 15vh;
     }
 
 .Corpo
