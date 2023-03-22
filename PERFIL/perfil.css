@@ -52,43 +52,41 @@ body
         align-items: center;
     }
 
-        .txt2
+        .texto
         {
-            background-color: red;
-            width: 80%;
+            background-color: rgb(57, 54, 54);
+            width: 55%;
             height: 5vh;
             display: flex;
             flex-direction: row;
-            justify-content: center;
             align-items: center;
+            border-radius: 5vh;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-        .txt3
+            .imagens
+            {
+                width: 4vh;
+                margin-right: 20px;
+            }
+            .texto2
+            {
+                color: #E6852B;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 2vh;
+            }
+    
+    .corpo4
+    {
+        width: 70%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .nome
         {
-            background-color: red;
-            width: 80%;
-            height: 5vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;  
+            width: 30vh;
+            margin-bottom: 4vh;
         }
-        .txt4
-        {
-            background-color: red;
-            width: 80%;
-            height: 5vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        .txt5
-        {
-            background-color: red;
-            width: 80%;
-            height: 5vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
+           
