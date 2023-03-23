@@ -8,18 +8,20 @@ body {
 }
 
 .d1 {
-    width: 500px;
-    height: 100vh;
+    width: 30%;
+    height: 95vh;
     background-color: #252323;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1.5vh;
+    border-radius: 5vh;
 }
 
 .imagem_perfil {
-    height: 200px;
-    width: 200px;
+    height: 30vh;
+    width: 30vh;
     margin-bottom: 20px;
 }
 
@@ -72,8 +74,8 @@ body {
     background-color: #E6852B;
     color: black;
     margin-top: 50px;
-    width: 100px;
-    height: 70px;
+    width: 10vh;
+    height: 5vh;
     border: none;
     border-radius: 20px;
 }
