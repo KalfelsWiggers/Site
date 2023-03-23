@@ -1,0 +1,85 @@
+body {
+    background-color: #393636;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.d1 {
+    width: 500px;
+    height: 100vh;
+    background-color: #252323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_perfil {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.barra 
+{
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    height: 30px;
+    width: 350px;
+}
+
+
+#txtEmail {
+    float: left;
+    color: black;
+    background-color: transparent;
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border: none;
+}
+
+#txtSenha {
+    float: left;
+    color: black;
+    background-color: transparent;
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border: none;
+}
+
+.esqueceuAsenha {
+    margin-top: 20px;
+    margin-left: 40%;
+    background-color: #252323;
+    color: #E6852B;
+    border: none;
+}
+.esqueceuAsenha:hover
+{
+    background-color: #252323;
+    color: #E6852B;
+}
+.entrar {
+    background-color: #E6852B;
+    color: black;
+    margin-top: 50px;
+    width: 100px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+}
+
+.entrar:hover {
+    background-color: black;
+    color: #E6852B;
+
+}
