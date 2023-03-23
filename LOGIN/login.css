@@ -37,8 +37,11 @@ body {
     width: 350px;
 }
 
-
-#txtEmail {
+.txtEmail:focus
+{
+    outline: none;
+}
+.txtEmail {
     float: left;
     color: black;
     background-color: transparent;
@@ -48,7 +51,11 @@ body {
     border: none;
 }
 
-#txtSenha {
+.txtSenha:focus
+{
+    outline: none;
+}
+.txtSenha {
     float: left;
     color: black;
     background-color: transparent;
