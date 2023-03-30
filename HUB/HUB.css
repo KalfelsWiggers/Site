@@ -18,16 +18,18 @@ body
 
     .Logo
     {
-        width: 30%;
+        width: 10%;
         height: 13vh;
-        background-color: rgb(39, 34, 34);
         margin-left: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
         .Nome
         {
-            width: 50%;
-            margin-top: -9vh;
+            width: 30vh; 
+            margin-left: 10vh;
         }
 
     .Botoes
@@ -57,13 +59,12 @@ body
             color: black;
         }
 
-    
     .Perfil
     {      
         width: 9vh;
         height: 9vh;
         background-color: rgb(39, 34, 34);
-        margin-right: 15vh;
+        margin-right: 25vh;
     }
 
 .Corpo
