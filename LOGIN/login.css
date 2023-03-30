@@ -35,32 +35,17 @@ body {
     width: 350px;
 }
 
-.txtEmail:focus
-{
-    outline: none;
-}
-.txtEmail {
+.txt {
     float: left;
     color: black;
-    background-color: transparent;
     font-size: 12px;
-    height: 20px;
-    width: 70%;
+    width: 100%;
+    height: 100%;
     border: none;
-}
-
-.txtSenha:focus
-{
-    outline: none;
-}
-.txtSenha {
-    float: left;
-    color: black;
-    background-color: transparent;
-    font-size: 12px;
-    height: 20px;
-    width: 70%;
-    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
 }
 
 .esqueceuAsenha {

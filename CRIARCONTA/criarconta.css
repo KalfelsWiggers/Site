@@ -34,10 +34,7 @@ body
             justify-content: center;
         }
 
-            .barra2:focus
-            {
-                outline: none;
-            }
+            
             .barra2
             {
                 margin-top: 20px;
