@@ -78,43 +78,25 @@ body {
 
 .botoes
 {
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.entrar {
-    background-color: #E6852B;
-    color: black;
-    margin-top: 5vh;
-    width: 15vh;
-    height: 3vh;
-    border: none;
-    border-radius: 15px;
-    margin-right: 8px;
-}
-
-.entrar:hover {
-    background-color: #ecba8c;
-    color: #000000;
-
-}
-
-.cadastre
-{
-    background-color: #E6852B;
-    color: black;
-    margin-top: 5vh;
-    width: 15vh;
-    height: 3vh;
-    border: none;
-    border-radius: 15px;
-    margin-left: 8px;
-}
-
-.cadastre:hover {
-    background-color: #ecba8c;
-    color: #000000;
-
-}
+        button
+        {
+            width: 20vh;
+            height: 30px;
+            background-color: #E6852B;
+            color: black;
+            border-radius: 2vh;
+            border: none;
+        }
+        button:hover
+        {
+            cursor: pointer;
+            background-color: #ecba8c;
+            color: black;
+        }

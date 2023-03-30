@@ -52,26 +52,26 @@ body
 
         .barra3
         {
+            width: 80%;
             height: 10vh;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
         }
 
-        .Entrar
+        button
         {
+            width: 20vh;
+            height: 30px;
             background-color: #E6852B;
             color: black;
-            margin-top: 5vh;
-            width: 14vh;
-            height: 5vh;
+            border-radius: 2vh;
             border: none;
-            border-radius: 15px;
-            margin-right: 8px;
         }
-        .Entrar:hover
+        button:hover
         {
+            cursor: pointer;
             background-color: #ecba8c;
-            color: #000000;
+            color: black;
         }
