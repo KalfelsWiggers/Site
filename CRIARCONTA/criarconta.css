@@ -45,11 +45,12 @@ body
                 height: 30px;
                 width: 350px;
                 border: none;
+                padding-left: 20px;
             }
 
         .barra3
         {
-            width: 80%;
+            width: 88%;
             height: 10vh;
             display: flex;
             flex-direction: row;
