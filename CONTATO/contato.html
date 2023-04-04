@@ -12,13 +12,16 @@
 <body>
 
     <div class="corpo">
-        <div class="txt"> NOS CONTATE AQUI! </div>
+      <a href="../HUB/HUB.html">
+        <img src="Nome.png" class="img">  
+      </a>
+      <div class="txt">CENTRAL DE DÚVIDAS</div>
         <br> <br>
         <div class="corpo2">
-            <input type="text" class="mensagem" id="mensagem" placeholder="Escreva aqui sua dúvida..."> <button onclick="Enviar();"> ➥ </button> 
+            <input type="text" class="mensagem" id="mensagem" onkeypress="return searchKeyPress(event)"; placeholder="Escreva aqui sua dúvida..."> <button id="botao" onclick="Enviar();"> ➥ </button> 
         </div>
     </div>
-    <div id="resposta">  </div>
+    <div class="resposta" id="resposta"></div>
 
 </body>
 <script>
@@ -54,8 +57,33 @@
 
     message = new Paho.MQTT.Message(texto);
     message.destinationName = topico;
-    client.send(message);
+    if (texto != "")
+    {
+      client.send(message);
+      mensagem.value = ""
+    }
   }
+  function searchKeyPress(e)
+
+{
+
+    e = e || window.event;
+
+    if (e.keyCode == 13)
+
+    {
+
+        document.getElementById('botao').click();
+
+        return false;
+
+    }
+
+    return true;
+
+    
+
+}
 
 </script>
 </html>
