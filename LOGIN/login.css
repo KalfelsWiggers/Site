@@ -35,17 +35,12 @@ body {
     width: 350px;
 }
 
-.txt {
-    float: left;
-    color: black;
-    font-size: 12px;
-    width: 100%;
-    height: 100%;
+.txt 
+{
+    width: 45vh;
+    height: 30px;
+    border-radius: 2vh;
     border: none;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
     padding-left: 20px;
 }
 
