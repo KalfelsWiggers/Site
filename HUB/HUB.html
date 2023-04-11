@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUB</title>
     <link rel="stylesheet" type="text/css" href="HUB.css">
+    <style>
+        
+        .errado
+        {
+            background-color: rgb(243, 136, 136);
+        }
+        .certo
+        {
+            background-color: lightgreen;
+        }
 
-
+    </style>
 </head>
 <body>
     
@@ -39,9 +49,15 @@
             <div class="txt"> A SURPRESA QUE VOCÊ ESPERA! </div>
             <div class="subtxt"> Peça agora sua caixa de comida </div>
         </div>
-        <div class="pesquisa">
-            <input type="text" class="estado" placeholder="Insira seu CEP...">
-            <button> CALCULAR FRETE </button>
+        <br> <br>
+        <div class="corpopesquisa">
+            <div class="pesquisa">
+                <input onkeyup="ValidarCEP();" type="text" class="estado" id="cep" placeholder="Insira seu CEP...">
+                <button onclick="calcularFrete();"> CALCULAR FRETE </button>
+            </div>
+            <div class="frete">
+                <p id="frete"></p>
+            </div>
         </div>
         <div class="abas">
             <div class="caixas">
@@ -56,7 +72,38 @@
             </div>
         </div>
     </div>
-    
-       
+         
 </body>
+<script>
+    function ValidarCEP()
+    {
+        expressao = /^[0-9]{5}-[0-9]{3}$/g;
+        texto = cep.value
+        resposta = expressao.test(texto);
+        if (resposta==false)
+        {
+            cep.classList.remove('certo');
+            cep.classList.add('errado');
+        }
+        if (resposta==true)
+        {
+            cep.classList.remove('errado');
+            cep.classList.add('certo');
+        }
+    }
+    function calcularFrete() 
+    {
+        expressao = /^[0-9]{5}-[0-9]{3}$/g;
+        texto = cep.value
+        resposta = expressao.test(texto);
+        if (resposta == true)
+        {
+            const cep = document.getElementById("cep").value;
+            const frete = Math.random() * 50; // valor de frete fictício
+            const freteFormatado = frete.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+            document.getElementById("frete").textContent = `O valor do frete para o CEP: ${cep} é de ${freteFormatado}.`;
+        }
+     
+    }
+  </script>
 </html>
