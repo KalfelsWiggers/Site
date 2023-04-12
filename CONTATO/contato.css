@@ -30,7 +30,7 @@ body {
         .txt
         {
             color: #E6852B;
-            font-size: 2em;
+            font-size: 32px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -48,7 +48,7 @@ body {
                 float: left;
                 color: black;
                 font-size: 12px;
-                width: 60%;
+                width: 250px;
                 height: 30px;
                 border: none;
                 background-color: white;
