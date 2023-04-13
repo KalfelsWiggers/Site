@@ -1,47 +1,117 @@
 body {
-    background-color: #393636;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
+}
+
+.Abasuperior {
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(39, 34, 34);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+}
+
+.quadrado1 {
+    width: 90px;
+    height: 12vh;
+}
+
+.quadrado2 {
+    width: 250px;
+    height: 12vh;
+}
+
+.Logo {
+    width: 250px;
+    height: 12vh;
+}
+
+.Nome {
+    width: 220px;
+    height: 55px;
+    margin-top: 18px;
+}
+
+.Botoes {
+    width: 600px;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Login {
+    width: 80px;
+    height: 80px;
+}
+
+.Perfil {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+button {
+    width: 20vh;
+    height: 30px;
+    background-color: #E6852B;
+    color: black;
+    border-radius: 2vh;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ecba8c;
+    color: black;
+}
+
+.corpo {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(57, 54, 54);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .d1 {
-    width: 30%;
-    height: 50vh;
+    width: 455px;
+    height: 400px;
     background-color: #252323;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5vh;
+    border-radius: 20px;
+    margin-bottom: 100px;
 }
 
 .nome {
     margin-bottom: 25px;
 }
 
-.barra 
-{
-    margin-top: 20px;
-    background-color: white;
+.barra {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 25px;
-    height: 30px;
-    width: 350px;
 }
 
-.txt 
-{
-    width: 45vh;
+.txt {
+    width: 335px;
     height: 30px;
     border-radius: 2vh;
     border: none;
     padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .esqueceuAsenha {
@@ -51,33 +121,18 @@ body {
     color: #E6852B;
     border: none;
 }
-.esqueceuAsenha:hover
-{
+
+.esqueceuAsenha:hover {
     background-color: #252323;
     color: #E6852B;
 }
 
-.botoes
-{
-    width: 80%;
+.botoes {
+    width: 88%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-        button
-        {
-            width: 20vh;
-            height: 30px;
-            background-color: #E6852B;
-            color: black;
-            border-radius: 2vh;
-            border: none;
-        }
-        button:hover
-        {
-            cursor: pointer;
-            background-color: #ecba8c;
-            color: black;
-        }
