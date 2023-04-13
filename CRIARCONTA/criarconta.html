@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CriarConta </title>
-    <link rel="stylesheet" type="text/css" href="criarconta.css"> 
+    <link rel="stylesheet" type="text/css" href="criarconta.css">
 
 </head>
+
 <body>
 
-    <div class="caixa">
-        <a href="../HUB/HUB.html" target="_self">
-            <img src="Nome.png" class="nome">
-        </a>
-        <div class="barra">
-            <input type="text" class="barra2" placeholder="Insira um email...">
-            <input type="text" class="barra2" placeholder="Insira uma senha...">
-            <input type="text" class="barra2" placeholder="Confirme sua senha...">
+    <div class="Abasuperior">
+        <div class="quadrado1"></div>
+        <div class="Logo">
+            <img src="Nome.png" class="Nome">
         </div>
-        <br>
-        <div class="barra3">
-            <a href="../HUB/HUB.html">
-                <button class="Entrar"> ENTRAR </button>
+        <div class="Botoes">
+            <a href="../HUB/HUB.html" target="_self">
+                <button>INÍCIO</button>
             </a>
-            <a href="../LOGIN/login.html">
-                <button class="Entrar"> JÁ TEM UMA CONTA? </button>
+            <a href="../CONTATO/contato.html" target="_self">
+                <button>FALE CONOSCO</button>
             </a>
+        </div>
+        <div class="Login">
+            <a href="../PERFIL/perfil.html" target="_self">
+                <img src="Perfil.png" class="Perfil">
+            </a>
+        </div>
+        <div class="quadrado2"></div>
+    </div>
+    <div class="corpo">
+        <div class="caixa">
+            <div class="barra">
+                <input type="text" class="barra2" placeholder="Insira um email...">
+                <input onkeyup="ValidarCPF();" type="text" class="barra2" id="cpf" placeholder="Insira seu CPF...">
+                <input type="text" class="barra2" placeholder="Insira uma senha...">
+                <input type="text" class="barra2" placeholder="Confirme sua senha...">
+            </div>
+            <br>
+            <div class="barra3">
+                <a href="../HUB/HUB.html">
+                    <button class="Entrar"> ENTRAR </button>
+                </a>
+                <a href="../LOGIN/login.html">
+                    <button class="Entrar"> JÁ TEM UMA CONTA? </button>
+                </a>
+            </div>
         </div>
     </div>
-    
+
 </body>
+<script src="criarconta.js"></script>
 </html>
