@@ -10,80 +10,38 @@
 
 </head>
 <body>
-
-    <div class="corpo">
-      <a href="../HUB/HUB.html">
-        <img src="Nome.png" class="img">  
-      </a>
-      <div class="txt">CENTRAL DE DÚVIDAS</div>
-        <br> <br>
-        <div class="corpo2">
-            <input type="text" class="mensagem" id="mensagem" onkeypress="return searchKeyPress(event)"; placeholder="Escreva aqui sua dúvida..."> <button id="botao" onclick="Enviar();"> ➥ </button> 
-        </div>
-    </div>
-    <div class="resposta" id="resposta"></div>
-
-</body>
-<script>
-
-  topico = "ContatoMysteryFood";
-
-  client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
-
-  client.onConnectionLost = ConexaoPerdida;
-  client.onMessageArrived = MensagemRecebida;
-
-  client.connect({onSuccess:Conectar});
-
-  function Conectar() {
-    
-    client.subscribe(topico);
-    
-  }
   
-  function ConexaoPerdida(responseObject) {
-    if (responseObject.errorCode !== 0) {
-      resposta.innerHTML += "Desconectado";
-    }
-  }
-
-  function MensagemRecebida(message) {
-      resposta.innerHTML += "<br><br>" + message.payloadString;
-  }
-
-  function Enviar()
-  {
-    texto = mensagem.value;
-
-    message = new Paho.MQTT.Message(texto);
-    message.destinationName = topico;
-    if (texto != "")
-    {
-      client.send(message);
-      mensagem.value = ""
-    }
-  }
-  function searchKeyPress(e)
-
-{
-
-    e = e || window.event;
-
-    if (e.keyCode == 13)
-
-    {
-
-        document.getElementById('botao').click();
-
-        return false;
-
-    }
-
-    return true;
-
-    
-
-}
-
-</script>
+  <div class="Abasuperior">
+    <div class="quadrado1"></div>
+    <div class="Logo">
+        <img src="Nome.png" class="Nome">
+    </div>
+    <div class="Botoes">
+        <a href="../HUB/HUB.html" target="_self">
+            <button>INÍCIO</button>
+        </a>
+        <a href="../LOGIN/login.html" target="_self">
+          <button>LOGIN</button>
+      </a>
+    </div>
+    <div class="Login">
+        <a href="../PERFIL/perfil.html" target="_self">
+            <img src="Perfil.png" class="Perfil">
+        </a>
+    </div>
+    <div class="quadrado2"></div>
+</div>
+<div class="corpo_geral">
+  <div class="corpo">
+      <div class="txt">CENTRAL DE DÚVIDAS</div>
+      <br> <br>
+      <div class="corpo2">
+        <input type="text" class="mensagem" id="mensagem" onkeypress="return searchKeyPress(event)"; placeholder="Escreva aqui sua dúvida..."> 
+        <button class="botao" id="botao" onclick="Enviar();"> ➤ </button> 
+      </div>
+  </div>
+  <div class="resposta" id="resposta"></div>
+</div>
+</body>
+<script src="contato.js"></script>
 </html>
