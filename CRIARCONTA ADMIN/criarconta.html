@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CriarConta </title>
+    <link rel="stylesheet" type="text/css" href="criarconta.css">
+
+</head>
+
+<body>
+
+    <div class="Abasuperior">
+        <div class="quadrado1"></div>
+        <div class="Logo">
+            <img src="Nome.png" class="Nome">
+        </div>
+        <div class="Botoes">
+            <a href="../HUB/HUB.html" target="_self">
+                <button>INÍCIO</button>
+            </a>
+            <a href="../CONTATO/contato.html" target="_self">
+                <button>FALE CONOSCO</button>
+            </a>
+        </div>
+        <div class="Login">
+            <a href="../PERFIL/perfil.html" target="_self">
+                <img onmouseleave="Troca('Perfil.png');" onmouseover="Troca('Perfil_após.png');" src="Perfil.png" id="perfil" class="Perfil">
+            </a>
+        </div>
+        <div class="quadrado2"></div>
+    </div>
+    <div class="corpo">
+        <div class="caixa">
+            <div class="admin"> ADMINISTRADOR </div>
+            <br>
+            <div class="barra">
+                <input type="text" class="barra2" placeholder="Insira um email...">
+                <input onkeyup="ValidarCPF();" type="text" class="barra2" id="cpf" placeholder="Insira seu CPF...">
+                <input type="text" id="senha" class="barra2" placeholder="Insira uma senha...">
+                <input onkeyup="ValidarSenha();" type="text" id="confirmacao" class="barra2" placeholder="Confirme sua senha...">
+            </div>
+            <br>
+            <div class="barra5">
+                <div class="barra 4">
+                    <button> Pesquisar </button>
+                    <br>
+                    <button> Excluir </button>
+                </div>
+                <div class="barra 4">
+                    <button> Inserir </button>
+                    <br>
+                    <button> Alterar </button>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="criarconta.js"></script>
+</html>
