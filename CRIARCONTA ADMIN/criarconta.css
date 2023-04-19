@@ -120,21 +120,6 @@ button:hover {
     justify-content: space-around;
 }
 
-.admin
-{
-    width: 360px;
-    height: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-}
-.Entrar2
-{
-    width: 360px;
-    height: 30px;
-}
-
 .errado {
     background-color: #f38888;
 }
