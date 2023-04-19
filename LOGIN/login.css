@@ -115,8 +115,8 @@ button:hover {
 }
 
 .esqueceuAsenha {
-    margin-top: 20px;
-    margin-left: 40%;
+    margin-top: 15px;
+    margin-right: 220px;
     background-color: #252323;
     color: #E6852B;
     border: none;
@@ -124,7 +124,7 @@ button:hover {
 
 .esqueceuAsenha:hover {
     background-color: #252323;
-    color: #E6852B;
+    color: #ecba8c;
 }
 
 .botoes {
@@ -134,6 +134,21 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.admin
+{
+    width: 360px;
+    height: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.Entrar2
+{
+    width: 360px;
+    height: 30px;
 }
 
 

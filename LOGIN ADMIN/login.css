@@ -44,6 +44,17 @@ body {
     margin-top: 20px;
 }
 
+.Login {
+    width: 80px;
+    height: 80px;
+}
+
+.Perfil {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
 button {
     width: 20vh;
     height: 30px;
@@ -69,18 +80,7 @@ button:hover {
     align-items: center;
 }
 
-.Login {
-    width: 80px;
-    height: 80px;
-}
-
-.Perfil {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-}
-
-.caixa {
+.d1 {
     width: 455px;
     height: 400px;
     background-color: #252323;
@@ -92,15 +92,18 @@ button:hover {
     margin-bottom: 100px;
 }
 
+.nome {
+    margin-bottom: 25px;
+}
+
 .barra {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 }
 
-
-.barra2 {
+.txt {
     width: 335px;
     height: 30px;
     border-radius: 2vh;
@@ -111,7 +114,20 @@ button:hover {
     align-items: center;
 }
 
-.barra3 {
+.esqueceuAsenha {
+    margin-top: 15px;
+    margin-right: 220px;
+    background-color: #252323;
+    color: #E6852B;
+    border: none;
+}
+
+.esqueceuAsenha:hover {
+    background-color: #252323;
+    color: #ecba8c;
+}
+
+.botoes {
     width: 88%;
     height: 10vh;
     display: flex;
@@ -120,10 +136,5 @@ button:hover {
     justify-content: space-around;
 }
 
-.errado {
-    background-color: #f38888;
-}
 
-.certo {
-    background-color: lightgreen;
-}
+
