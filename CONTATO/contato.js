@@ -47,3 +47,7 @@ function searchKeyPress(e)
   }
   return true;
 }
+function Troca(imagem)
+{
+  perfil.src=imagem;
+}

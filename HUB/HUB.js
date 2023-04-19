@@ -28,3 +28,7 @@ function calcularFrete()
     }
 
 }
+function Troca(imagem)
+{
+    perfil.src=imagem;
+}

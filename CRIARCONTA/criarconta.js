@@ -14,3 +14,7 @@ function ValidarCPF()
         cpf.classList.add('certo');
     }
 }
+function Troca(imagem)
+{
+  perfil.src=imagem;
+}
