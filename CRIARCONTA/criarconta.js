@@ -14,23 +14,36 @@ function ValidarCPF()
         cpf.classList.add('certo');
     }
 }
+
 function Troca(imagem)
 {
   perfil.src=imagem;
 }
-function validarSenha() 
+
+password = document.getElementById("senha"),
+confirm_password = document.getElementById("confirmar_senha");
+
+function ValidarSenha()
 {
-    var senha = document.getElementById("senha").value;
-    var confirmacaoSenha = document.getElementById("confirmacao").value;
-    
-    if (senha == confirmacaoSenha) 
-    {
-        confirmacao.classList.remove('certo');
-        confirmacao.add('errado');
-    } 
-    else 
-    {
-        confirmacao.classList.remove('errado');
-        confirmacao.classList.add('certo');
-    }
+  if(password.value != confirm_password.value) 
+  {
+    confirmar_senha.classList.remove('certo');
+    confirmar_senha.classList.add('errado');
+  } 
+  else 
+  {
+    confirmar_senha.classList.remove('errado');
+    confirmar_senha.classList.add('certo');
   }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+function Verificar()
+{
+    if (senha.value.length < 8)
+    {
+        alert ("A senha deve contar no mínimo 8 caracteres");
+    }
+}

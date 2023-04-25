@@ -37,13 +37,13 @@
             <div class="barra">
                 <input type="text" class="barra2" placeholder="Insira um email...">
                 <input onkeyup="ValidarCPF();" type="text" class="barra2" id="cpf" placeholder="Insira seu CPF...">
-                <input type="text" id="senha" class="barra2" placeholder="Insira uma senha...">
-                <input onkeyup="ValidarSenha();" type="text" id="confirmacao" class="barra2" placeholder="Confirme sua senha...">
+                <input type="password" id="senha" class="barra2" placeholder="Insira uma senha...">
+                <input onkeyup="ValidarSenha();" type="password" id="confirmar_senha" class="barra2" placeholder="Confirme sua senha...">
             </div>
             <br>
             <div class="barra3">
                 <a href="../HUB/HUB.html">
-                    <button class="Entrar"> ENTRAR </button>
+                    <button onmousemove="Verificar();" class="Entrar"> ENTRAR </button>
                 </a>
                 <a href="../LOGIN/login.html">
                     <button class="Entrar"> JÁ TEM UMA CONTA? </button>
