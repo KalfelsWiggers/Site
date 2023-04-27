@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    background-color: rgb(57, 54, 54);
 }
 
 .errado {
@@ -158,4 +159,14 @@ button:hover {
 
 .botaocarrinho {
     width: 30vh;
+}
+
+.TUDO
+{
+    animation: animation 1s forwards;
+}
+
+@keyframes animation {
+    0% {transform: translateY(-300px); opacity: 0;}
+    100% {transform: translateY(0px);opacity: 1;}
 }
