@@ -15,7 +15,7 @@ body {
 
 .Abasuperior {
     width: 100%;
-    height: 12vh;
+    height: 98px;
     background-color: rgb(39, 34, 34);
     display: flex;
     flex-direction: row;
@@ -25,17 +25,17 @@ body {
 
 .quadrado1 {
     width: 90px;
-    height: 12vh;
+    height: 98px;
 }
 
 .quadrado2 {
     width: 250px;
-    height: 12vh;
+    height: 98px;
 }
 
 .Logo {
     width: 250px;
-    height: 12vh;
+    height: 98px;
 }
 
 .Nome {
@@ -46,7 +46,7 @@ body {
 
 .Botoes {
     width: 600px;
-    height: 12vh;
+    height: 98px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,11 +154,11 @@ button:hover {
 }
 
 .botaocaixa {
-    width: 30vh;
+    width: 236px;
 }
 
 .botaocarrinho {
-    width: 30vh;
+    width: 236px;
 }
 
 .animation
