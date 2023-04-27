@@ -9,7 +9,7 @@
 </head
 <body>
 
-    <div class="TUDO">
+    <div class="animation">
         <div class="Abasuperior">
             <div class="quadrado1"></div>
             <div class="Logo">
@@ -35,32 +35,32 @@
             </div>
             <div class="quadrado2"></div>
         </div>
-        <div class="Corpo">
-            <div class="Frase">
-                <div class="txt"> A SURPRESA QUE VOCÊ ESPERA! </div>
-                <div class="subtxt"> Peça agora sua caixa de comida </div>
+    </div>
+    <div class="Corpo">
+        <div class="Frase">
+            <div class="txt"> A SURPRESA QUE VOCÊ ESPERA! </div>
+            <div class="subtxt"> Peça agora sua caixa de comida </div>
+        </div>
+        <br> <br>
+        <div class="corpopesquisa">
+            <div class="pesquisa">
+                <input onkeyup="ValidarCEP();" type="text" class="estado" id="cep" placeholder="Insira seu CEP...">
+                <button onclick="calcularFrete();"> CALCULAR FRETE </button> 
             </div>
-            <br> <br>
-            <div class="corpopesquisa">
-                <div class="pesquisa">
-                    <input onkeyup="ValidarCEP();" type="text" class="estado" id="cep" placeholder="Insira seu CEP...">
-                    <button onclick="calcularFrete();"> CALCULAR FRETE </button> 
-                </div>
-                <div class="frete">
-                    <div id="frete"></div>
-                </div>
+            <div class="frete">
+                <div id="frete"></div>
             </div>
-            <div class="abas">
-                <div class="caixas">
-                    <a href="../CAIXAS/caixas.html" target="_self">
-                        <img src="Caixas.png" class="botaocaixa">
-                    </a>
-                </div>
-                <div class="carrinho">
-                    <a href="teste.html" target="_self">
-                        <img src="Carrinho.png" class="botaocarrinho">
-                    </a>
-                </div>
+        </div>
+        <div class="abas">
+            <div class="caixas">
+                <a href="../CAIXAS/caixas.html" target="_self">
+                    <img src="Caixas.png" class="botaocaixa">
+                </a>
+            </div>
+            <div class="carrinho">
+                <a href="teste.html" target="_self">
+                    <img src="Carrinho.png" class="botaocarrinho">
+                </a>
             </div>
         </div>
     </div>
