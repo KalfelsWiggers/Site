@@ -34,24 +34,25 @@
     </div>
     <div class="corpo">
         <div class="caixa">
-            <form class="barra">
-                <input type="text" class="barra2" placeholder="Insira um email...">
-                <input onkeyup="ValidarCPF();" type="text" class="barra2" id="cpf" placeholder="Insira seu CPF...">
-                <input type="password" id="senha" class="barra2" placeholder="Insira uma senha...">
+            <form class="barra" action="crud.php" method="post">
+                
+                <input type="text" class="barra2" name="email" placeholder="Insira um email...">
+                <input onkeyup="ValidarCPF();" type="text" class="barra2" name="cpf" id="cpf" placeholder="Insira seu CPF...">
+                <input type="password" class="barra2" name="senha" id="senha" placeholder="Insira uma senha...">
                 <input onkeyup="ValidarSenha();" type="password" id="confirmar_senha" class="barra2" placeholder="Confirme sua senha...">
-            </form>
-            <br>
-            <div class="barra3">
-                <a href="../HUB/HUB.html">
-                    <button onmousemove="Verificar();" class="Entrar"> ENTRAR </button>
-                </a>
-                <a href="../LOGIN/login.html">
-                    <button class="Entrar"> JÁ TEM UMA CONTA? </button>
-                </a>
-            </div>
-            <a href="../CRIARCONTA ADMIN/criarconta.html">
-                <button> visualizar tela de admin </button>
-            </a>  
+            
+                <br>
+                <div class="barra3">
+                    
+                        <input onmousemove="Verificar();" type="submit" value="ENTRAR" class="botao" name="entrar">
+                        <input type="submit" value="JÁ TEM UMA CONTA?" name="login" class="botao">
+                    
+                </div>
+                <a href="../CRIARCONTA ADMIN/criarconta.html">
+                    <button> visualizar tela de admin </button>
+                </a> 
+
+            </form> 
         </div>
     </div>
 

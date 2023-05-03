@@ -42,7 +42,7 @@ confirm_password.onkeyup = validatePassword;
 
 function Verificar()
 {
-    if (senha.value.length < 8)
+    if (senha.value.length <= 8)
     {
         alert ("A senha deve contar no mínimo 8 caracteres");
     }
