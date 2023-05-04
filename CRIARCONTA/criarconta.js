@@ -37,13 +37,17 @@ function ValidarSenha()
   }
 }
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+senha.onchange = ValidarSenha;
+confirmar_senha.onkeyup = ValidarSenha;
 
 function Verificar()
 {
     if (senha.value.length <= 8)
     {
         alert ("A senha deve contar no mínimo 8 caracteres");
+    }
+    if (cpf.value.length < 14)
+    {
+      alert ("CPF inválido");
     }
 }
